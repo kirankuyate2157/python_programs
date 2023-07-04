@@ -18,7 +18,7 @@ Labels = np.load("D:\\programing\\python_programms\\openCv\\practice\\labels.npy
 face_recognizer = cv.face.LBPHFaceRecognizer_create()
 face_recognizer.read("D:\\programing\\python_programms\\openCv\\practice\\face_trained.yml")
 
-img = cv.imread(r"C:\\Users\\Kiran\\Pictures\\Saved Pictures\\imagestyrywd.jpg")
+img = cv.imread(r"C:\\Users\\Kiran\\Pictures\\Saved Pictures\\indexrtedxwd.jpg")
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow("unidentified person", gray)
 

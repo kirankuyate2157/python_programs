@@ -20,13 +20,12 @@ def change_res(capture, width, height):
 # cv.imshow("cats",mysize)
 # waitKey(0)
 
-v = cv.VideoCapture(
-    "D:\\programing\\python_programms\\assets\Girl - 27092.mp4")
+v = cv.VideoCapture("D:\\programing\\python_programms\\assets\\Girl - 27092.mp4")
 # change_res(v, 840, 1057)
 while True:
-    isTrue, Frame = v.read()
-    img = resize_frame(Frame, .7)
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    isTrue, img= v.read()
+    # img = resize_frame(img, .7)
+    gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 
     cv.imshow("girls", img)
     if waitKey(20) & 0xFF == ord('d'):
